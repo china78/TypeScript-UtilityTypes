@@ -1,4 +1,23 @@
 {
+  "name": "包名",
+  "version": "版本",
+  "private": true,
+  "description": "描述",
+  "email": "b@rubble.com",
+  "url": "http://barnyrubble.tumblr.com/",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "keywords": "把关键字放在里面, 它是一个字符串数组, 有助于人们npm search发现您的包裹。",
+  "homepage": "项目的主页",
+  "bugs": {
+    "url": "https://github.com/owner/project/issues",
+    "email": "project@hostname.com"
+  },
+  "license": {
+    "type": "ISC",
+    "url": "https://opensource.org/licenses/ISC"
+  },
   "scripts": {
     "test": "mocha --recursive ./test/*.test.js"
   },
@@ -8,5 +27,55 @@
   "devDependencies": {
     "chai": "^4.3.6",
     "ramda": "^0.28.0"
-  }
+  },
+  "peerDependencies": {
+    "tea": "2.x",
+    "soy-milk": "1.2"
+  },
+  "peerDependenciesMeta": {
+    "soy-milk": {
+      "optional": true
+    }
+  },
+  "bundledDependencies": [
+    "renderized",
+    "super-streams"
+  ],
+  "funding": {
+    "type": "individual",
+    "url": "http://example.com/donate"
+  },
+  "files": "",
+  "main": "",
+  "browser": "",
+  "bin": {
+    "myapp": "./cli.js"
+  },
+  "man": [
+    "./man/foo.1",
+    "./man/bar.1"
+  ],
+  "directories": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/cli.git",
+    "directory": "packages/react-dom"
+  },
+  "config": {
+    "port": "8080"
+  },
+  "overrides": {
+    "foo": "1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.3 <15"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "cpu": [
+    "x64",
+    "ia32"
+  ]
 }

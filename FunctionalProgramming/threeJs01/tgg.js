@@ -161,7 +161,7 @@ function rendererReady(createRenderer, setRendererSize, setRendererColor, insert
   return renderer
 }
 
-function sceneReady(createScene, createMesh, createPointLight, setPointLightPosition, createAmbientLight) {
+function sceneReady(createScene, createMesh, createPointLight, setPointLightPosition, createAmbientLight, sceneAdd) {
   const scene = createScene(THREE);
   const point = createPointLight();
   sceneAdd(scene, createMesh())
